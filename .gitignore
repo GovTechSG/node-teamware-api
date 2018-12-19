@@ -1,0 +1,6 @@
+.idea/
+.secret
+node_modules/
+temp/*
+*.env
+

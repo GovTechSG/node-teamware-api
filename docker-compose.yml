@@ -1,0 +1,36 @@
+version: '3.2'
+
+services:
+  node-teamware-api:
+    build: .
+    image: node-teamware-api:latest
+    env_file: ./.env
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: node-teamware-api-tmp
+        target: /usr/src/app/tmp
+    ports:
+      - "80:8080"
+    networks:
+      - node-teamware-api
+    depends_on:
+      - node-teamware-api-mongo
+
+
+  node-teamware-api-mongo:
+    restart: unless-stopped
+    image: mongo:latest
+    volumes:
+      - type: volume
+        source: node-teamware-api-mongo-data-db
+        target: /data/db
+    networks:
+      - node-teamware-api
+
+volumes:
+  node-teamware-api-tmp:
+  node-teamware-api-mongo-data-db:
+
+networks:
+  node-teamware-api:

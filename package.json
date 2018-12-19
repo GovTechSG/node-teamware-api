@@ -1,0 +1,61 @@
+{
+  "name": "teamware-api",
+  "version": "1.0.0",
+  "description": "Applications Infrastructure Teamware",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Loh <samuel_loh@ida-gds.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/superagent": "^3.8.4",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "chokidar": "^2.0.4",
+    "cookie-parser": "^1.4.3",
+    "cron": "^1.5.0",
+    "express": "^4.16.4",
+    "express-request-id": "^1.4.1",
+    "express-winston": "^3.0.1",
+    "http-errors": "latest",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.12",
+    "multer": "^1.4.1",
+    "node-forge": "^0.7.6",
+    "nodemailer": "^4.7.0",
+    "nunjucks": "^3.1.4",
+    "response-time": "^2.3.2",
+    "serve-favicon": "^2.5.0",
+    "superagent": "^4.0.0",
+    "telegraf": "^3.25.0",
+    "vm2": "^3.6.4",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.0",
+    "style-loader": "^0.23.1",
+    "telegraf-command-parts": "^1.0.3",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GovTechSG/node-teamware-api.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/GovTechSG/node-teamware-api/issues"
+  },
+  "homepage": "https://github.com/GovTechSG/node-teamware-api#readme"
+}
