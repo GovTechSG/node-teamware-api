@@ -11,7 +11,7 @@
   "dependencies": {
     "bluebird": "^3.5.3",
     "cheerio": "^1.0.0-rc.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "moment": "^2.22.2",
     "superagent": "^4.0.0"
   }
